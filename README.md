@@ -4,7 +4,7 @@
 **By Ibrahim Al Dabbagh**
 
 <p align="center">
-  <img src="./Screenshot from 2024-05-27 23-27-57.png" width="840">
+  <img src="images/Screenshot from 2024-05-27 23-27-57.png" width="840">
 </p>
 
 ---
@@ -17,7 +17,7 @@ It **selects the correct rigid body**, converts quaternion → **Euler (roll, pi
 > GitHub natively renders GIFs in READMEs. Your demo will play right on the repo page.
 
 <p align="center">
-  <img src="./AV.gif" width="880">
+  <img src="images/AV.gif" width="880">
 </p>
 
 ---
@@ -36,7 +36,7 @@ It **selects the correct rigid body**, converts quaternion → **Euler (roll, pi
 ## 📌 System Architecture
 
 <p align="center">
-  <img src="./loc_bloc_v4.png" width="920">
+  <img src="images/loc_bloc_v4.png" width="920">
 </p>
 
 **Pipeline**
@@ -52,13 +52,13 @@ It **selects the correct rigid body**, converts quaternion → **Euler (roll, pi
 ## 🛰 RQT Graph (Topic Interaction)
 
 <p align="center">
-  <img src="./rqt_graph_5.png" width="980">
+  <img src="images/rqt_graph_5.png" width="980">
 </p>
 
 A cleaner variant:
 
 <p align="center">
-  <img src="./localization_rqt.png" width="980">
+  <img src="images/localization_rqt.png" width="980">
 </p>
 
 These diagrams show how one localization source drives **behaviour planning, route computing, live tracking, the environment model, control,** and the **transceiver**.
@@ -68,7 +68,7 @@ These diagrams show how one localization source drives **behaviour planning, rou
 ## 📡 Raw Input vs. Published Output
 
 <p align="center">
-  <img src="./demo_m5.png" width="880">
+  <img src="images/demo_m5.png" width="880">
 </p>
 
 - **Left:** `/pose_modelcars` (OptiTrack rigid body "9" with raw pose & quaternion)  
@@ -80,7 +80,7 @@ These diagrams show how one localization source drives **behaviour planning, rou
 Real‑time visualization validating pose, heading, and LiDAR points.
 
 <p align="center">
-  <img src="./Screenshot from 2024-05-27 23-27-57.png" width="920">
+  <img src="images/Screenshot from 2024-05-27 23-27-57.png" width="920">
 </p>
 
 ---
@@ -88,7 +88,7 @@ Real‑time visualization validating pose, heading, and LiDAR points.
 ## 🧭 Downstream Consumers
 
 <p align="center">
-  <img src="./Localization5.png" width="900">
+  <img src="images/Localization5.png" width="900">
 </p>
 
 | Subsystem | What it consumes |
@@ -222,14 +222,14 @@ ros2 topic echo /euler_angles
 
 ## 📱 ADAPT Companion UI
 <p align="center">
-  <img src="./Screenshot_20240427-050535_ADAPT.jpg" width="450">
+  <img src="images/Screenshot_20240427-050535_ADAPT.jpg" width="450">
 </p>
 
 ---
 
 ## 🚗 Real Model‑City Vehicle
 <p align="center">
-  <img src="./Screenshot 2025-11-07 020253.png" width="900">
+  <img src="images/Screenshot 2025-11-07 020253.png" width="900">
 </p>
 
 ---
