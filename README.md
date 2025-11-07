@@ -105,18 +105,16 @@ Real‑time visualization validating pose, heading, and LiDAR points.
 Given quaternion components \((x, y, z, w)\), the ZYX (roll-pitch-yaw) convention used here is:
 
 $$
-\text{roll} = \operatorname{atan2}\!\big( 2(wx + yz),\, 1 - 2(x^2 + y^2) \big)
+\text{roll} = \text{atan2}\!\left( 2(wx + yz),\, 1 - 2(x^2 + y^2) \right)
 $$
 
 $$
-\text{pitch} = \operatorname{asin}\!\big( 2(wy - zx) \big)
+\text{pitch} = \arcsin\!\left( 2(wy - zx) \right)
 $$
 
 $$
-\text{yaw} = \operatorname{atan2}\!\big( 2(wz + xy),\, 1 - 2(y^2 + z^2) \big)
+\text{yaw} = \text{atan2}\!\left( 2(wz + xy),\, 1 - 2(y^2 + z^2) \right)
 $$
-
-All angles are **radians**.
 
 ---
 
