@@ -14,7 +14,6 @@ The **Robot & Drone Localization** module is a ROS 2 (rclpy) node that converts
 It **selects the correct rigid body**, converts quaternion → **Euler (roll, pitch, yaw)**, stabilizes ENU coordinates, and publishes standardized ROS 2 messages that feed **route planning, behaviour planning, the environment model, lateral control, the V2X transceiver,** and **live tracking**.
 
 **Demo (GIF, autoplay on GitHub):**  
-> GitHub natively renders GIFs in READMEs. Your demo will play right on the repo page.
 
 <p align="center">
   <img src="images/AV.gif" width="880">
@@ -101,21 +100,21 @@ Real‑time visualization validating pose, heading, and LiDAR points.
 | Transceiver (V2X) | Pose broadcast to the network |
 
 ---
-
 ## 🧮 Mathematical Background (Quaternion → Euler)
-Given quaternion components \((x, y, z, w)\), the ZYX (roll‑pitch‑yaw) convention used here is:
 
-\[
-\text{roll} = \text{atan2}\!\left(2(wx + yz),\, 1 - 2(x^2 + y^2)\right)
-\]
+Given quaternion components \((x, y, z, w)\), the ZYX (roll-pitch-yaw) convention used here is:
 
-\[
-\text{pitch} = \text{asin}\!\left(2(wy - zx)\right)
-\]
+$$
+\text{roll} = \operatorname{atan2}\!\big( 2(wx + yz),\, 1 - 2(x^2 + y^2) \big)
+$$
 
-\[
-\text{yaw} = \text{atan2}\!\left(2(wz + xy),\, 1 - 2(y^2 + z^2)\right)
-\]
+$$
+\text{pitch} = \operatorname{asin}\!\big( 2(wy - zx) \big)
+$$
+
+$$
+\text{yaw} = \operatorname{atan2}\!\big( 2(wz + xy),\, 1 - 2(y^2 + z^2) \big)
+$$
 
 All angles are **radians**.
 
@@ -196,13 +195,6 @@ ros2 topic echo /euler_angles
 - Outputs are intended for **ENU‑style** consumers; `frame_id` is currently set to **`base_link_7`**.  
 - The node focuses on **absolute** localization (no fusion/filtering inside).
 
----
-
-## 🛠️ Limitations (current code)
-- Target **rigid body name is hard‑coded to "9"**.  
-- `frame_id` hard‑coded to **`base_link_7`**.  
-- No covariance estimates are published.  
-- No TF broadcasting yet.
 
 ---
 
