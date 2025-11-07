@@ -13,7 +13,7 @@
 The **Robot & Drone Localization** module is a ROS 2 (rclpy) node that converts **OptiTrack / motion‑capture** streams into clean, real‑time localization outputs used by an autonomous miniature vehicle and drone stack in a model city.  
 It **selects the correct rigid body**, converts quaternion → **Euler (roll, pitch, yaw)**, stabilizes ENU coordinates, and publishes standardized ROS 2 messages that feed **route planning, behaviour planning, the environment model, lateral control, the V2X transceiver,** and **live tracking**.
 
-**Demo (GIF, autoplay on GitHub):**  
+**Demo:**  
 
 <p align="center">
   <img src="images/AV.gif" width="880">
