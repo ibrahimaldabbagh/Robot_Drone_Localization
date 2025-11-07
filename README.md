@@ -220,19 +220,5 @@ ros2 topic echo /euler_angles
 
 ---
 
-## 📱 ADAPT Companion UI
-<p align="center">
-  <img src="images/Screenshot_20240427-050535_ADAPT.jpg" width="450">
-</p>
-
----
-
-## 🚗 Real Model‑City Vehicle
-<p align="center">
-  <img src="images/Screenshot 2025-11-07 020253.png" width="900">
-</p>
-
----
-
 ## 👤 Author
 **Ibrahim Al Dabbagh** — Robotics & Perception Engineer
