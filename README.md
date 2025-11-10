@@ -197,3 +197,8 @@ ros2 topic echo /euler_angles
 
 ## 👤 Author
 **Ibrahim Al Dabbagh** — Robotics & Perception Engineer
+> ⚠️ **Portfolio — Proprietary Notice**
+> 
+> This repository is part of my personal portfolio — **viewing only**.  
+> Do **not** copy, fork, modify, reuse, or redistribute any files without written permission.  
+> © 2025 Ibrahim Aldabbagh — **All rights reserved.**
